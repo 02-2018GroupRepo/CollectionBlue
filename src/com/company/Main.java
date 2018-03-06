@@ -9,9 +9,29 @@ public class Main {
 
     public static void main(String[] args) {
 
+       // sumNumbers();
+    findMeFunction();
 
-        phoneBookExercise();
+    }
 
+    static void concatString(){
+        StringExercise thisBuilding = new StringExercise();
+
+        String str1 = "Java";
+        String str2 = "Programming";
+
+        thisBuilding.concateMethod(str1, str2);
+        System.out.println(thisBuilding.getBuilder());
+        System.out.println(thisBuilding.getBuilder().length());
+        System.out.println(thisBuilding.getBuilder().toLowerCase());
+        System.out.println(thisBuilding.getBuilder().toUpperCase());
+
+    }
+
+    static void findMeFunction(){
+        String[] students = {"Dina", "Shane", "NaDario", "Amber", "Calder", "Noelle", "Donell"};
+        String[] inputs = {"Noelle", "Jake", "NaDario", "Dina"};
+        FindMe.foundStudents(students,inputs);
     }
 
     static void phoneBookExercise() {
