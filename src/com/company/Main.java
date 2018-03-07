@@ -9,12 +9,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-       // sumNumbers();
-    findMeFunction();
-
+        letterS("banana");
     }
 
-    static void concatString(){
+    static void concatString() {
         StringExercise thisBuilding = new StringExercise();
 
         String str1 = "Java";
@@ -28,10 +26,10 @@ public class Main {
 
     }
 
-    static void findMeFunction(){
+    static void findMeFunction() {
         String[] students = {"Dina", "Shane", "NaDario", "Amber", "Calder", "Noelle", "Donell"};
         String[] inputs = {"Noelle", "Jake", "NaDario", "Dina"};
-        FindMe.foundStudents(students,inputs);
+        StringExercise.foundStudents(students, inputs);
     }
 
     static void phoneBookExercise() {
@@ -82,4 +80,21 @@ public class Main {
         }
     }
 
+        static void crawlingFriday() {
+            String userInput = StringExercise.stringBuffer();
+            StringExercise.crawlingFriday(userInput);
+
+        }
+
+        static void revString() {
+            String myString = StringExercise.stringBuffer();
+            StringExercise.reverseString(myString);
+
+        }
+        static void leet(String inString){
+        StringExercise.leetSpeak(inString);
+        }
+        public static void letterS(String string){
+        StringExercise.letterSummary(string);
+        }
 }
